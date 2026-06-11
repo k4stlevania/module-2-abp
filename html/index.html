@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container mt-5" style="max-width: 600px;">
+        <h2>Inicio de sesion</h2>
+        <div>
+            <form action="" id="loginForm">
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Email:</label>
+                    <input type="email" id="emailInput" name="email" class="form-control" placeholder="abcd12@gmail.com"> 
+                    <div class="invalid-feedback">
+                        email invalido intenta de nuevo
+                    </div>
+                    <div class="valid-feedback">
+                        email valido
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="formPassword" class="form-label">Contraseña:</label>
+                    <input type="password" id="formPassword" name="formPassword" class="form-control" placeholder="contraseña">
+                    <div class="invalid-feedback">
+                        contraseña invalida, al menos 8 caracteres no especiales y numeros
+                    </div>
+                    <div class="valid-feedback">
+                        contraseña valida
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary formBtn">Iniciar sesión</button>
+            </form>
+
+        </div>
+    </div>
+    <script src="../js/loginValidation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
